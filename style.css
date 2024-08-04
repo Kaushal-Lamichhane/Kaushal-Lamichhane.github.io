@@ -1,56 +1,104 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #444;
+    position: sticky;
+    top: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-in-out 0.5s;
 }
 
 section {
-    padding: 20px;
-    margin: 10px;
-}
-
-#home {
-    background: #f4f4f4;
-    text-align: center;
-}
-
-#about {
+    padding: 40px 20px;
     background: #fff;
 }
 
-#projects {
-    background: #f4f4f4;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin: 5px 0;
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-#contact {
-    background: #fff;
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #007bff;
+    transition: color 0.3s;
 }
 
 form {
@@ -65,6 +113,8 @@ form label {
 form input, form textarea {
     padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 form button {
@@ -72,7 +122,9 @@ form button {
     background: #333;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 form button:hover {
@@ -83,8 +135,47 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #007bff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
 }

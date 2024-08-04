@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -16,48 +16,65 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <h1 class="fade-in">Your Name</h1>
+        <p class="fade-in">Welcome to my portfolio. Explore my work and projects.</p>
     </header>
-    
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello, I'm [Your Name]. I am a BSc CSIT student and a content creator. Explore my work and projects.</p>
-    </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a [Your Age] year old student from Nepal, pursuing BSc CSIT. I have a passion for [Your Interests] and have been working on various projects related to [Your Field].</p>
-        <p>Skills: [List your skills]</p>
+        <div class="container">
+            <h2 class="slide-in">About Me</h2>
+            <p>I am a BSc CSIT student with a passion for technology, travel, and content creation. I enjoy working on projects that challenge my skills and help me grow professionally and personally.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming Languages: HTML, CSS, JavaScript, Python</li>
+                    <li>Tools: Git, VS Code, Photoshop</li>
+                    <li>Soft Skills: Problem-solving, Communication, Teamwork</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1. Technologies used: [Technologies].</p>
-            <a href="[Link to Project]" target="_blank">View Project</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2. Technologies used: [Technologies].</p>
-            <a href="[Link to Project]" target="_blank">View Project</a>
+        <div class="container">
+            <h2 class="slide-in">Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1. Technologies used: HTML, CSS, JavaScript.</p>
+                <a href="[Link to Project]" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2. Technologies used: Python, Django.</p>
+                <a href="[Link to Project]" target="_blank">View Project</a>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="container">
+            <h2 class="slide-in">Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>© 2024 Your Name. All rights reserved.</p>
+            <ul class="socials">
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/yourprofile" target="_blank">GitHub</a></li>
+                <li><a href="https://www.youtube.com/channel/yourchannel" target="_blank">YouTube</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
